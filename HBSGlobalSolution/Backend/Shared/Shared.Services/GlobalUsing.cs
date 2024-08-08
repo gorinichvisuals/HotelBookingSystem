@@ -1,0 +1,20 @@
+﻿global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.Tokens;
+global using System.Security.Claims;
+global using System.Text;
+global using System.IdentityModel.Tokens.Jwt;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Routing;
+global using RedisRateLimiting;
+global using StackExchange.Redis;
+global using System.Threading.RateLimiting;
+
+global using Shared.Services.Services.Abstractions;
+global using Shared.Services.Services.Implementations;
+global using Shared.Services.Enums.User;
+global using Shared.Services.Options;
+global using Shared.Services.Constants;

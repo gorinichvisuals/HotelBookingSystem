@@ -1,0 +1,10 @@
+{
+  "MonoBankOptions": {
+    "BaseUrl": "https://api.monobank.ua/",
+    "XToken": ""
+  },
+  "BookingUrlOptions": {
+    "RedirectUrl": "",
+    "WebHookUrl" : ""
+  }
+}

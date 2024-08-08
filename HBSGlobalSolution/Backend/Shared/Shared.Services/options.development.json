@@ -1,0 +1,38 @@
+{
+  "JwtOptions": {
+    "BookingCustomerSecret": "hotel_booking_customer_secretkey",
+    "BookingCustomerIssuer": "BookingCustomerServer",
+    "BookingCustomerAudience": "CUSTOMER",
+    "BookingAdminSecret": "_hotel_booking_admin_secret_key_",
+    "BookingAdminIssuer": "BookingAdminServer",
+    "BookingAdminAudience": "ADMIN",
+    "TokenExpirationDays": 2
+  },
+  "RedisOptions": {
+    "Key": "",
+    "ConnectionString": "127.0.0.1:6379",
+    "Name": "Booking Cache"
+  },
+  "RateLimitingOptions": {
+    "RateLimitRules": [
+      {
+        "EndpointName": "CustomerAuth",
+        "PermitLimit": 1,
+        "PeriodSeconds": 10
+      },
+      {
+        "EndpointName": "CustomerResetPassword",
+        "PermitLimit": 1,
+        "PeriodSeconds": 10
+      },
+      {
+        "EndpointName": "GetRooms",
+        "PermitLimit": 1,
+        "PeriodSeconds": 5
+      }
+    ]
+  },
+  "CloudFrontOptions": {
+    "CloudFront": ""
+  }
+}

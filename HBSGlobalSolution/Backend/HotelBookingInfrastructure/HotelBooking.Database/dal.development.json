@@ -1,0 +1,5 @@
+{
+  "DataOptions": {
+    "HotelBookingConnectionString": "Server=localhost;Database=HotelBooking;Trusted_Connection=True;TrustServerCertificate=True"
+  }
+}
